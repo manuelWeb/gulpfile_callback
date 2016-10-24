@@ -46,7 +46,7 @@ gulp.task('img', function() {
 gulp.task('sass',['slim'], function() {
   return gulp.src(src+'**/scss/*.scss')
   .pipe(plumber())
-  .pipe(sass())
+  // .pipe(sass())
   .pipe(sass({errLogToConsole: true}))
   .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
   .pipe(rename(function(path) {
@@ -54,7 +54,7 @@ gulp.task('sass',['slim'], function() {
   }))
   .pipe(gulp.dest('render'))
   .pipe(using())
-  .pipe(bs.reload({stream: true }));
+  // .pipe(bs.reload({stream: true }));
 })
 
 // slim task
@@ -70,22 +70,19 @@ gulp.task('slim', function () {
     }
   }))
   .pipe(slim( {pretty: true, indent: 2 })) // cb // {read:false},
-  .pipe(using())
-  .pipe(gulp.dest('render')) // slim folder
+  // .pipe(using())
+  // .pipe(gulp.dest('render')) // slim folder
   .pipe(rename(function(path) {
     path.dirname += "/../";
   }))
-  // .pipe(changed('render#<{(||)}>#slim/'))
   .pipe(gulp.dest('render')) // html folder
   .pipe(using())
-  // .pipe(bs.reload({
-  //   stream: true
-  // }))
   .on('end',function () {
     slimEnd = true;
     premailergo(slimEnd);
   })
 });
+//
 // premailer task // si erreur sass > rendu incomplet à gérer
 gulp.task('premailer', function (cb) {
   var premailEnd = false;
@@ -134,7 +131,6 @@ function premailergo (slimEnd) {
 // lancement > fonction watch
 gulp.task('dev',['bs','img','slim','sass'], function() {
   gulp.watch([src+'**/images/*.{png,jpg,gif}'],['img'])
-  // gulp.watch([src+'*|)}>#*|)}>#*.slim'],['bs','sass','slim','img']);
   gulp.watch([src+'**/**/*.slim'],['sass','slim','img']);
   gulp.watch(src+'**/scss/*.scss',['sass','slim']);
 });
