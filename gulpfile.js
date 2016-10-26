@@ -3,20 +3,20 @@
 ==================================================*/
 // to disable>dest path replace fs
 /*----------  dependance  > package.json > node_modules  ----------*/
-var gulp       = require('gulp'),
-bs             = require('browser-sync'),
-slim           = require("gulp-slim"),
-sass           = require('gulp-sass'),
-plumber        = require('gulp-plumber'),
-premailer      = require('gulp-premailer'),
-autoprefixer   = require('gulp-autoprefixer'),
-rename         = require('gulp-rename'),
-using          = require('gulp-using'),
-rm             = require('gulp-rimraf'),
-rimraf         = require('rimraf'),
-prettify       = require('gulp-html-prettify'),
-changed        = require('gulp-changed');
-const notifier = require('node-notifier');
+var gulp           = require('gulp'),
+    bs             = require('browser-sync'),
+    slim           = require("gulp-slim"),
+    sass           = require('gulp-sass'),
+    plumber        = require('gulp-plumber'),
+    premailer      = require('gulp-premailer'),
+    autoprefixer   = require('gulp-autoprefixer'),
+    rename         = require('gulp-rename'),
+    using          = require('gulp-using'),
+    rm             = require('gulp-rimraf'),
+    rimraf         = require('rimraf'),
+    prettify       = require('gulp-html-prettify'),
+    changed        = require('gulp-changed');
+    const notifier = require('node-notifier');
 // src & output
 var  src = 'src/';
 
