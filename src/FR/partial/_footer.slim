@@ -17,22 +17,23 @@ tr
         td
           img.altarial src==($imgSrc+"footer_03.png") width="8" height="20" border="0" alt=""
 / ##### footer code
-tr
-  td.pt5.pb5
-    table border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF"
-      tr
-        td
-          table border="0" cellpadding="0" cellspacing="0"
-            tr
-              td.pr10 align="right" width="458"
-                p.altarial.foocode.m0
-                  | Pour recevoir vos cadeaux, indiquez le code :
-              td.bdall1 valign="middle" align="center" width="58"
-                table border="0" cellpadding="0" cellspacing="0"
-                  tr
-                    td valign="middle" align="center" height="24"
-                      font style="font-family: Arial, sans-serif; font-size:16px; color: #0070B9; "
-                        b  == $code
+- if $fooCodeBoo == true
+  tr
+    td.pt5.pb5
+      table border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF"
+        tr
+          td
+            table border="0" cellpadding="0" cellspacing="0"
+              tr
+                td.pr10 align="right" width="458"
+                  p.altarial.foocode.m0
+                    | Pour recevoir vos cadeaux, indiquez le code :
+                td.bdall1 valign="middle" align="center" width="58"
+                  table border="0" cellpadding="0" cellspacing="0"
+                    tr
+                      td valign="middle" align="center" height="24"
+                        font style="font-family: Arial, sans-serif; font-size:16px; color: #0070B9; "
+                          b  == $code
 / ##### end footer code
 tr
   td

@@ -1,7 +1,8 @@
-== Slim::Template.new('./src/var_global.slim').render
-== Slim::Template.new('./src/FR/var/var.slim').render
-== Slim::Template.new('./src/FR/var/var_footer.slim').render
-== Slim::Template.new('./src/FR/var/var_legal.slim').render
+== Slim::Template.new('src/var_global.slim').render
+== Slim::Template.new('src/FR/var/var.slim').render
+== Slim::Template.new('src/FR/var/var_footer.slim').render
+== Slim::Template.new('src/FR/var/var_legal.slim').render
+- $fooCodeBoo   = false
 - $legalService = true
 - $ModOffre     = false
 doctype transitional

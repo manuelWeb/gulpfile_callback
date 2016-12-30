@@ -1,6 +1,6 @@
 /### change
--$title     = "La boutique de noël vous ouvre sa porte !"
--$txtheader = "Des centaines d'idées à découvrir"
+-$title     = "Découvrez notre sélection anti-froid !"
+-$txtheader = "Découvrez nos solutions pour lutter contre le froid"
 /### do not change
 -$mirorLink = "http://tempsl.com/Newsletters/miroir/#{$miror}/FR/index.htm"
 -$url       ="http://www.tempsl.fr/fr/";$urlCat ="http://www.tempsl.fr/cat/fr/"
@@ -10,34 +10,22 @@
 / compact
 -rayon  = "boutique/rayon_evenement.aspx?urlLangue=fr&nbp=99&pg=0&evenement_id="
 -urlRay = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}"
--pdt    = ["0", "maison-deco/no-l/2-tasses-decoration-chatons-no-l/1005115.html", "maison-deco/no-l/6-etoiles-dorees/1021112.html", "maison-deco/no-l/pere-no-l-led/1013119.html", "maison-deco/no-l/2-pochettes-cadeaux-chouettes/9590316.html"]
+-pdt    = ["0", "vetements-accessoires/hiver/cols-roules-lot-2/7846017.html", "vetements-accessoires/accessoires-personnels/chapeau-polaire-double-epaisseur-beige/9228321.html", "vetements-accessoires/hiver/cape-microfibres-beige/8512014.html", "vetements-accessoires/hiver/semelles-mouton/9438011.html"]
 
 /### content link ["logo", "accroche", "pdt", "prix", "bouton" ]
--$link_slice1       = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}accroche"+$campaign;# accroche
--$link_slice2_1     = "#{$url}index.aspx#{$srcmedium[0]}#{$content[0]}logo"+$campaign;# logo
--$link_slice2_2_1   = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}accroche"+$campaign;# accroche
--$link_slice2_2_2_1 = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}accroche"+$campaign;# vide! sous accroche
--$link_slice2_2_2_2 = "#{$url}#{pdt[1]}#{$srcmedium[0]}#{$content[0]}pdt"+$campaign;# pk2
--$link_slice3_1     = "#{$url}#{pdt[2]}#{$srcmedium[0]}#{$content[0]}pdt"+$campaign;# pk1
--$link_slice3_2     = "#{$url}#{pdt[1]}#{$srcmedium[0]}#{$content[0]}pdt"+$campaign;# pk2
--$link_slice4_2     = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}bouton"+$campaign;# btn entrez vite
--$link_slice5_1     = "#{$url}#{pdt[3]}#{$srcmedium[0]}#{$content[0]}pdt"+$campaign;# pk3
--$link_slice5_2     = "#{$url}#{pdt[4]}#{$srcmedium[0]}#{$content[0]}pdt"+$campaign;# pk4
--$link_slice6       = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}bouton"+$campaign;# btn rayon
--$link_insert_kdo   = "#{$url}animation/presentation-cadeaux.aspx#{$srcmedium[0]}#{$content[0]}kdo"+$campaign;# insertKDO
+- $slice1   = "#{$url}index.aspx#{$srcmedium[0]}#{$content[0]}logo#{$campaign}"
+- $slice2   = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}accroche#{$campaign}"
+- $slice3_1 = "#{$url}#{pdt[1]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $slice3_2 = "#{$url}#{pdt[2]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $slice4_1 = "#{$url}#{pdt[3]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $slice4_2 = "#{$url}#{pdt[4]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $slice5   = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}bouton#{$campaign}"
 
 / alt + title
--$alt_slice1       = "La boutique de Noël"
--$alt_slice2_1     = "TEMPS L"
--$alt_slice2_2_1   = "vous ouvre sa porte !"
--$alt_slice2_2_2_1 = ""
--$alt_slice2_2_2_2 = "bougeoir ange"
--$alt_slice3_1     = "2 sapins cire LED"
--$alt_slice3_2     = ""
--$alt_slice4_1     = ""
--$alt_slice4_2     = "Entrez vite !"
--$alt_slice4_3     = ""
--$alt_slice5_1     = "père Noel jongleur"
--$alt_slice5_2     = "2 pochettes chouette"
--$alt_slice6       = "Des centaines d’idées à découvrir"
--$alt_insert_kdo   = "et recevez vos CADEAUX : Le Lot de 3 Plaids GRATUIT* + Didoo Le Nounours Tendresse 4€ seulement dont 3€ reversés à l’UNICEF"
+- $alt_slice1   = "TEMPS L"
+- $alt_slice2   = "Découvrez notre Sélection ANTI-FROID !"
+- $alt_slice3_1 = "Lot de 2 cols roulés 14.95€"
+- $alt_slice3_2 = "Chapeau polaire double épaisseur 9.95€"
+- $alt_slice4_1 = "Cape microfibres 2 coloris 19.95€"
+- $alt_slice4_2 = "Semelles mouton 6.95€"
+- $alt_slice5   = "> Voir TOUTE la sélection ANTI-FROID"
